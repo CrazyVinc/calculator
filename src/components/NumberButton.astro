@@ -1,0 +1,7 @@
+---
+const { flat = false, id } = Astro.props;
+---
+
+<button class={`bg-black text-white rounded-full min-h-7 ${flat ? "h-[7vh]" : " h-[11vh]"} cursor-pointer hover:bg-gray-950`} data-button={id}>
+    {id}
+</button>
